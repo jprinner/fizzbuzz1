@@ -36,6 +36,12 @@ final class FizzBuzzTest extends TestCase {
         $this->assertSame("Error: Max input is less than the min.", $actual);
     }
 
+    public function testInput0(): void {
+        $fizzbuzz = new FizzBuzz;
+        $actual = $fizzbuzz->get(0,0);
+        $this->assertSame("0", $actual);
+    }
+
     public function testInput1(): void {
         $fizzbuzz = new FizzBuzz;
         $actual = $fizzbuzz->get(1,1);

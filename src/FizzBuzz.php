@@ -13,7 +13,9 @@ class FizzBuzz {
     }
 
     for ($i = $min; $i <= $max; $i++) {
-      if ($i % 15 == 0) {
+      if ($i === 0) {
+        $return[] = 0;
+      } elseif ($i % 15 == 0) {
         $return[] = "fizzbuzz";
       } elseif ($i % 3 == 0) {
         $return[] = "fizz";
